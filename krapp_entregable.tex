@@ -1,0 +1,483 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{titling}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{todonotes}
+
+\titleformat{\section}
+	{\bfseries \huge}
+	{}
+	{0em}
+	{}[\titlerule]
+
+\titleformat{\subsection}
+	{\bfseries \Large}
+	{}
+	{0em}
+	{}
+
+\titleformat{\subsubsection}
+	{\bfseries \large}
+	{}
+	{0em}
+	{}
+
+\titlespacing{\section} %me permite controlar el espaciado de la seccion que le indico
+	{0em}
+	{3em}
+	{1.5em}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Penguin}
+            
+        \vspace{0.3cm}
+        \LARGE
+        Reparación y mantenimiento de computadoras   
+        
+        \vspace{0.5cm}
+        \Large
+        Un trabajo presentado para la materia de \\
+        Sistemas Productivos
+            
+        \vfill
+            
+        \includegraphics[width=0.4\textwidth]{linux-logo.png}
+            
+        \Large
+        \textbf{Krapp Ramiro} \\
+        Instituto tecnológico San Bonifacio\\
+        Departamento de electrónica\\
+        \today
+        
+        \vspace{0.5cm}
+        \large {Hecho en \LaTeX}
+            
+    \end{center}
+\end{titlepage}
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\noindent\rule{\textwidth}{0.7pt}
+
+%\listoftodos
+\pagebreak
+
+\section{Descripción del proyecto}
+	El proposito que tiene Penguin para su existencia es el mantenimiento y documentación de equipos informáticos usados en oficinas y escuelas, para que su potencia y capacidad se mantenga competente a nivel tecnológico a lo largo del tiempo.
+
+\section{Justificación del proyecto}
+	Hoy en día es fundamental tener una computadora que funcione 
+	de forma correcta para desarrollar una gran cantidad de actividades, 
+	tanto recreativas, como de estudio y de trabajo.
+	
+	Sabiendo eso, muchas veces surgen una gran cantidad de inconvenientes,
+	como por ejemplo:
+	\begin{itemize}
+	\item Averio de computadora por mal uso o por malos hábitos.
+	\item Desgaste de los equipos, sus componentes y su capacidad de refrigeración por el paso del tiempo.
+	\item Desconocimiento ante capacidad de hacer un trabajo de forma más eficiente / más organizada.
+	\end{itemize}
+
+	Ante la necesidad de solucionar todos estos inconvenientes, nace Penguin, 
+	una empresa especializada en estos casos, con una gran capacidad para 
+	manejar distintas situaciones de forma excepcional, lo cual permite 
+	a los clientes aprovechar los recursos informáticos de forma eficiente.
+	
+	En penguin las computadoras son gestionadas mediante una base de datos, 
+	permitiendo un control sobre su estado y facilitando en gran medida su mantención.
+
+
+\section{Objetivos del proyecto}
+	\subsection{Objetivo general}
+		Mantenimiento y mejora de equipos informáticos, aprovechando 
+		los recursos existentes que una organización pueda poseer 
+		sin incurrir en gastos innecesarios
+
+	\subsection{Documentacion de los equipos existentes en una base de datos}
+		\begin{itemize}
+		\item Sus especificaciones técnicas.
+		\item El estado actual de los componentes
+		\item Los problemas que tenga en el momento de la revisión.
+		\item Los tratamientos correspondientes que se apliquen.
+		\end{itemize}
+		
+	\subsection{Mantenimiento de los equipos de refrigeración}
+		\begin{itemize}
+		\item Cambio de pasta térmica y thermal pads.
+		\item Limpieza de coolers y optimización del flujo de aire.
+		\end{itemize}
+	
+	\subsection{Reparación de equipos en mal estado}
+		\begin{itemize}
+		\item Equipos que no prendan o no den señal.
+		\item Equipos cuyo dispositivo de almacenamiento este gastado o defectuoso.
+		\item Otros defectos.
+		\end{itemize}
+	
+	\subsection{Instalación y optimización de sistemas operativos}
+		\begin{itemize}
+		\item Instalación y optimización de sistemas Microsoft Windows.
+		\item Instalación y optimización de sistemas GNU/Linux.
+		\item Optimización por software
+		\end{itemize}
+	
+	\subsection{Asesoramiento informático}
+		\begin{itemize}
+		\item ¿Cómo evitar ser infectado por un virus informático?
+		\item ¿Cómo mantener los documentos ordenados?
+		\item ¿Cómo trabajar más eficientemente?
+		\item ¿Cómo solucionar problemas de forma autónoma?
+		\item Malas prácticas, cómo dañan a los equipos que usamos y cómo evitarlas.
+		\end{itemize}
+
+\pagebreak
+
+\section{Presupuesto}
+	El presupuesto final depende de los servicios contratados
+
+	\subsection{Armado de base de datos}
+		\begin{itemize}
+		\item Armado inicial \dotfill \$37995
+		\item Mantenimiento mensual \dotfill \$4999 por més
+		\end{itemize}
+	
+	\subsection{Mantenimiento de la refrigeración}
+		\begin{itemize}
+		\item 1 equipo \dotfill \$995
+		\item 10 equipos \dotfill \$8499
+		\item 50 equipos \dotfill \$33590
+		\item 100 equipos \dotfill \$59995
+		\end{itemize}
+	
+	\subsection{Reparación de equipos en mal estado}
+		\begin{itemize}
+		\item 1 equipo \dotfill \$1450
+		\item 10 equipos \dotfill \$10499
+		\item 50 equipos \dotfill \$44999
+		\end{itemize}
+	
+	\subsection{Instalacion y mantenimiento de S.O.}
+		\textbf{Sistemas GNU/Linux}
+		\begin{itemize}
+		\item 1 equipo \dotfill \$1150
+		\item 10 equipos \dotfill \$8499
+		\item 50 equipos \dotfill \$34999
+		\end{itemize}
+		
+		\textbf{Sistemas Microsoft Windows}
+		\begin{itemize}
+		\item 1 equipo \dotfill \$1380
+		\item 10 equipos \dotfill \$10199
+		\item 50 equipos \dotfill \$41999
+		\end{itemize}
+	
+	\subsection{Asesoramiento informatico}
+		\begin{itemize}
+		\item 1 persona \dotfill \$2299
+		\item 10 persona \dotfill \$19899
+		\item 50 persona \dotfill \$87999
+		\end{itemize}
+
+\pagebreak
+
+\section{Requisitos del proyecto}
+	\subsection{Descripción detallada del proyecto y del producto}
+		El proyecto que planea Penguin en una 
+		contratación completa del servicio es el siguiente:
+		
+		\subsubsection{Desarrollar una base de datos}
+			Esta base de datos debe ser robusta y confiable que almacene el estado actual de todos los equipos, el lugar donde
+			estan fisicamente ubicados, el historial de tickets del equipo,
+			los arreglos que se han hecho y sus componentes actuales tales como:
+			\begin{itemize}
+			\item CPU
+				\begin{itemize}
+				\item Modelo
+				\item frecuencia
+				\item cantidad de nucleos
+				\item socket
+				\end{itemize}
+			
+			\item Motherboard
+				\begin{itemize}
+				\item Modelo
+				\item socket del CPU
+				\item DDR de la RAM
+				\item RAM máxima permitida
+				\item Frecuencia máxima de la RAM
+				\end{itemize}
+			
+			\item RAM
+				\begin{itemize}
+				\item Modelo
+				\item Capacidad
+				\item Frecuencia
+				\item DDR
+				\item Cantidad de slots ocupados
+				\end{itemize}
+			
+			\item Almacenamiento
+				\begin{itemize}
+				\item Modelo
+				\item ¿SSD o HDD?
+				\item En caso de HDD, velocidad de giro de los platos rotantes del disco 
+				\item Cantidad de almacenamiento en GB
+				\end{itemize}
+			
+			\item Graficos
+				\begin{itemize}
+				\item ¿Integrados o dedicados?
+				\end{itemize}		
+										
+				En caso de dedicados
+				\begin{itemize}
+				\item Modelo
+				\item Capacidad de memoria
+				\item Frecuencia de la memoria
+				\end{itemize}
+			\end{itemize}
+			
+		\subsubsection{Hacer un mantenimiento a la refrigeración de los equipos}
+			Consiste en:
+			\begin{itemize}
+			\item Limpieza del polvo acumulado en el chasis
+			\item Limpieza del polvo acumulado en los chasis FAN
+			\item Limpieza del polvo acumulado en los CPU FAN
+			\item Limpieza del polvo acumulado en los PCB
+			\item Cambio de pasta térmica y thermal pads en los circuitos que lo requieran
+			\item Desensamblaje de la fuente de alimentación para su limpieza
+			\end{itemize}
+		
+		\subsubsection{Reparar los equipos en mal estado}
+			En caso de encontrar un equipo en mal estado, se procede a lo siguiente:
+			\begin{itemize}
+			\item Diagnóstico del error
+			\item Si el error es de hardware, se reemplaza el equipamiento dañado
+			\item Si el error es de software, se arregla el error
+			\end{itemize}
+		
+		\subsubsection{Instalar sistemas operativos y realizar optimizacion por Software}
+			\textbf{En PCs con Microsoft Windows 10, se procede a}
+			\begin{itemize}
+			\item Desactivar servicios innecesarios
+			\item Desactivar telemetría
+			\item Desactivar la instalación autómatica de actualizaciones 
+			opcionales que puedan causar inestabilidad en el equipo
+			\item Desactivar las animaciones y la reducir la carga gráfica del escritorio
+			\item Desinstalar el software basura con el que viene preinstalado el sistema operativo
+			\item En caso de tener una instalacion SSD+HDD, mover las carpetas de 
+			Descargas, Fotos, Documentos, Musica y video a una particion en el HDD
+			\end{itemize}
+			
+			\textbf{En PCs con GNU/Linux, se procede a}
+			\begin{itemize}
+			\item Desactivar el login del firewall (por ejemplo, ufw)
+			\item Cambiar a un compositor más ligero o desactivarlo para equipos de bajo rendimiento
+			\item Bajar el nivel de swappiness a un nivel más adecuado
+			\item En caso de que sea necesario, cambiar a un desktop enviroment más ligero
+			para reducir la carga sobre el CPU y la GPU
+			\item En caso de tener una instalacion SSD+HDD, montar la particion /home sobre el HDD
+			\item Dependiendo de la cantidad de RAM, se pueden considerar los siguientes aspectos:
+				\begin{itemize}
+				\item En caso de que la RAM sea mayor a 8GB: Montar /tmp sobre una partición tmpfs
+				\item En caso de que la RAM sea mayor a 6GB: Reducir el inode cache de forma menos agresiva modificando sysctl.conf
+				\item En caso de que la RAM sea menor a 4GB: Incrementar zswap
+				\end{itemize}
+			\end{itemize}
+		
+		\subsubsection{Asesorar informaticamente sobre los siguientes temas}
+			\begin{itemize}
+			\item Virus informáticos
+				\begin{itemize}
+				\item ¿Qué es un virus informático?
+				\item ¿Cómo se transmite?
+				\item ¿Cómo se evitan?
+				\item Como compartir y recibir documentos evitando infecciones
+				\end{itemize}
+			
+			\item Organización de documentos
+				\begin{itemize}
+				\item ¿Cómo asignar nombres de forma correcta?
+				\item ¿Cómo ordenar las carpetas de manera idonea?
+				\item ¿Cómo mantener un historial de las versiones de un documento?
+				\item ¿Cómo mantener un escritorio prolijo?
+				\end{itemize}
+			
+			\item Trabajo de forma eficiente
+				\begin{itemize}
+				%\item ¿Cómo regular el tiempo de trabajo y de recreación?
+				%\item ¿Cómo crear un espacio de trabajo cómo y comfortable?
+				%\item ¿Cómo mantener el espacio de trabajo ordenado?
+				%\item ¿Cómo mantener una buena postura?
+				\item ¿Cómo hacer documentos y presentaciones de forma eficiente con {\LaTeX}?
+				\item Los atajos de teclado y cómo ayudan a trabajar de forma rápida
+				\end{itemize}
+			
+			\item Solución de problemas de forma autónoma
+			 	\begin{itemize}
+			 	\item ¿Cómo buscar cosas en internet filtrando resultados?
+			 	\item Codigos de error y cómo buscarlos en internet
+			 	\end{itemize}		
+			
+			\item Malas prácticas
+				\begin{itemize}
+				\item Cómo mantener una buena ventilación en los equipos
+				\item Como evitar dañar los equipos
+				\end{itemize}	
+			\end{itemize}			
+		\newpage	
+		
+	\subsection{Alcance del proyecto}
+		El proyecto en general no incluye
+		\begin{itemize}
+		\item La instalación eléctrica, de gas y de agua
+		\end{itemize}
+		
+		\subsubsection{Mantenimiento de los equipos de refrigeración}
+			Incluye:
+			\begin{itemize}
+			\item Limpieza de chasis FAN y de CPU FAN
+			\item Limpieza de fuente de alimentación
+			\item Cambio de pasta térmica y thermal pads
+			\item Limpieza superficial de PCB's
+			\item Limpieza superficial del chasis
+			\item Limpieza de las pantallas
+			\end{itemize}
+			
+			No incluye:
+			\begin{itemize}
+			\item Limpieza del lugar de trabajo
+			\end{itemize}
+			
+		\subsubsection{Reparación de los equipos}
+			Incluye:
+			\begin{itemize}
+			\item Reparación por desperfecto técnico de fabricación
+			\item Reparación por el mal uso de los equipos
+			\end{itemize}
+		
+		\subsubsection{Instalación y optimización de los sistemas operativos}
+			Incluye:
+			\begin{itemize}
+			\item Instalación de Windows 10 LSTC
+			\item Debloatting de sistemas Microsoft
+			\item Instalación de sistemas GNU/Linux basados en Debian, Red Hat o Arch
+			\item Optimización de sistemas GNU/Linux basados en Debian, Red hat o Arch
+			\end{itemize}
+			
+			No incluye:
+			\begin{itemize}
+			\item Instalación y optimización de los siguientes sistemas:
+				\begin{itemize}
+				\item Microsoft Windows XP / Vista / 7 / 8 / 8.1
+				\item GNU/Hurd
+				\item Sistemas GNU/Linux sin systemd como Artix
+				\item Sistemas GNU/Linux con graficos integrados SiS
+				\item Sistemas GNU/Linux no basados en Debian, Red Hat o Arch como:
+					\begin{itemize}
+					\item Slackware
+					\item NixOS
+					\item Void
+					\item Alpine
+					\item Gentoo
+					\item OpenSUSE
+					\item Deepin
+					\end{itemize}
+				\end{itemize}
+			\end{itemize}
+		
+		\subsubsection{Asesoramiento informático}
+			Incluye:
+			\begin{itemize}
+			\item Capacitación sobre la protección contra software 
+			malicioso, páginas web maliciosas y como evitar caer en pishing
+			\item Capacitación sobre los buenos hábitos a la hora
+			de mantener documentos informáticos bien ordenados, 
+			organizados y categorizados
+			\item Capacitación sobre backups y precaución
+			ante la posible pérdida de datos
+			\item Capacitación sobre cómo trabajar de forma
+			más eficiente y profesional
+			\item Capacitación sobre como solucionar los problemas
+			de forma autónoma y sin la necesidad de requerir a un técnico
+			\item Capacitación sobre como mantener un equipo para evitar
+			desperfectos y lograr que mantenga un correcto funcionamiento
+			a lo largo del tiempo
+			\end{itemize}
+			
+			No incluye:
+			\begin{itemize}
+			\item Capacitación sobre lenguajes de programación
+			\item Cuestiones ajenas a la informática
+			\end{itemize}
+	\subsection{Objetivos del proyecto}
+		\subsubsection{¿Qué tareas debemos realizar?}
+			Se debe, segun lo contratado:
+			\begin{itemize}
+			\item Hacer una base de datos
+			\item Mantener los equipos de refrigeracion
+			\item Reparar los equipos en mal estado
+			\item Instalar y optimizar los sistemas operativos
+			\item Asesorar informaticamente a los empleados
+			\end{itemize}
+			
+		\subsubsection{¿Cuándo se realizarán las tareas?}
+			Las tareas se comenzarán a realizar pasada una semana desde la firma del contrato 
+			como máximo, y su finalización dependera de los servicios contratados.
+			
+		\subsubsection{¿Qué recursos son necesarios para realizarla?}
+			\textbf{Para la base de datos se necesita}
+			\begin{itemize}
+			\item Una computadora capaz de manejar el tamaño de la base de datos\\
+			\end{itemize}
+			
+			\textbf{Tanto para la reparación como para el mantenimiento se necesita, por persona:}
+			\begin{itemize}
+			\item 1 juego de destornilladores
+			\item 1 pinza y alicate
+			\item 1 aplicación de pasta térmica
+			\item Thermal pads de multiples tamaños y grosores
+			\item 1 cepillo antiestática
+			\item Multiples precintos
+			\end{itemize}
+			En caso de que haya componentes averiados o malfuncionantes, su correspondiente reemplazo\\
+			
+			\textbf{Para la instalación y optimización, se necesita}
+			\begin{itemize}
+			\item 1 pendrive booteable (preferiblemente con Ventoy y multiples ISO's) 3.0 de 64GB
+			\item 1 juego de mouse, teclado y parlantes 
+			\item 1 pantalla
+			\item Scripts necesarios para las optimizaciones
+			\end{itemize}
+			
+		\subsubsection{¿Quién es responsable del cumplimiento de la tarea?}
+			\begin{itemize}
+			\item Reparación, instalación y mantenimiento --- Los técnicos de Penguin
+			\item Documentación y base de datos --- El equipo de Base de datos de Penguin
+			\item Asesoramiento informático --- El equipo dedicado a asesoramiento de Penguin
+			\end{itemize}
+			
+		\subsubsection{¿Cuándo deben estar completas?}
+			Depende del plazo estipulado en el contrato y del tamaño de la empresa
+			
+		\subsubsection{¿Qué resultado se espera de la tarea?}
+			Se espera un sencillo resultado, tener un equipo informático robusto y potente, bien
+			organizado y con los estándares de hoy en día
+			
+\section{Descripción del alcance del producto o servicio}
+
+\section{Entregables del proyecto}
+
+\section{Restricciones del proyecto}
+
+
+\end{document}
